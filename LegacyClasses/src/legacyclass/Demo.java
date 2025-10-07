@@ -22,7 +22,13 @@ public class Demo {
 		p1.put("2","React");
 		p1.put("3","DSA");
 		
-		System.out.println(p1);
+		// Get only values
+        Enumeration enm = p1.elements();
+        while(enm.hasMoreElements()) {
+            System.out.println(enm.nextElement());
+        }
+		
+		System.out.println();
 		
 		Enumeration<?> e1 = p1.propertyNames();
 		
