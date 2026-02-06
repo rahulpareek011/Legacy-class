@@ -30,15 +30,14 @@ public class Demo {
 		
 		System.out.println();
 		
-		Enumeration<?> e1 = p1.propertyNames();
+		Enumeration e1 = p1.propertyNames();
 		
+		// get key value pair
 		while(e1.hasMoreElements()) {
 			String keys = (String) e1.nextElement();
 			String values = p1.getProperty(keys);
 			System.out.println(keys + "-> " + values);
 		}
-		
-		
 	}
 
 }
